@@ -1,7 +1,5 @@
 package com.example.spring_boot_sample.Greeting;
 
-
-
 import org.springframework.stereotype.Service;
 
 @Service
