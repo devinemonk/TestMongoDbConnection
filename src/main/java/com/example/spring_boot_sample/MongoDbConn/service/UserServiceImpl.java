@@ -14,6 +14,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.example.spring_boot_sample.MongoDbConn.constants.UserConstant;
+
 @Service
 @Slf4j
 public class UserServiceImpl implements UserService {
@@ -34,10 +35,10 @@ public class UserServiceImpl implements UserService {
     }
 
 
-
     public User getUserById(String id) {
         return userRepository.findById(id).orElseThrow(() ->
                 new UserNotFoundException(UserConstant.USER_NOT_FOUND));
 
     }
+
 }
